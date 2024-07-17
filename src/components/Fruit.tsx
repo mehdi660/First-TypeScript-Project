@@ -1,9 +1,11 @@
 import { FruitType } from "../typescript/FruitType";
 
+type ColorOption = "red" | "green" | "blue" | "yellow";
+
 type FruitProps = {
   fruitInfo: FruitType;
   onClick: () => void;
-  backgroundColor?: string;
+  backgroundColor?: ColorOption;
 };
 
 export default function Fruit({

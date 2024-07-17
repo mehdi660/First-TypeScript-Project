@@ -47,6 +47,7 @@ function App() {
           <Fruit
             fruitInfo={fruit}
             onClick={() => handleDelete(fruit.id)}
+            backgroundColor="red"
             key={fruit.id}
           />
         ))}
