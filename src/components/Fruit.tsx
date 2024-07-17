@@ -1,4 +1,11 @@
-export default function Fruit({ fruitInfo, onClick }) {
+import { FruitType } from "../typescript/FruitType";
+
+type FruitProps = {
+  fruitInfo: FruitType;
+  onClick: () => void;
+};
+
+export default function Fruit({ fruitInfo, onClick }: FruitProps) {
   // state
   // const fruitInfo = props.fruitInfo;
   // const onFruitDelete = props.onFruitDelete;
