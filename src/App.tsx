@@ -11,7 +11,7 @@ function App() {
   ]);
 
   // comportements
-  const handleDelete = (id) => {
+  const handleDelete = (id: number) => {
     //1. copie du state
     const fruitsCopy = [...fruits];
 
@@ -22,7 +22,7 @@ function App() {
     setFruits(fruitsCopyUpdated);
   };
 
-  const handleAdd = (fruitAAjouter) => {
+  const handleAdd = (fruitAAjouter: { id: number; nom: string }) => {
     //1. copie du state
     const fruitsCopy = [...fruits];
 
@@ -33,9 +33,9 @@ function App() {
     setFruits(fruitsCopy);
   };
 
-  const afficherFruitPrefere = (fruitNom) => {
-    alert(`J'aime trop ce fruit: ${fruitNom}`);
-  };
+  // function afficherFruitPrefere(fruitNom: string) {
+  //   alert(`J'aime trop ce fruit: ${fruitNom}`);
+  // }
 
   // affichage (render)
   return (
