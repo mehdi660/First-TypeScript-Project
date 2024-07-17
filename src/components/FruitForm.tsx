@@ -10,7 +10,7 @@ export default function FruitForm({ handleAdd }: FruitFormProps) {
   const [nouveauFruit, setNouveauFruit] = useState("");
 
   // comportements
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const id = new Date().getTime();
     const nom = nouveauFruit;
@@ -20,7 +20,7 @@ export default function FruitForm({ handleAdd }: FruitFormProps) {
     setNouveauFruit("");
   };
 
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNouveauFruit(event.target.value);
   };
 

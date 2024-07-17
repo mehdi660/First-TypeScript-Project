@@ -5,7 +5,7 @@ import { FruitType } from "./typescript/FruitType";
 
 function App() {
   // state (état, données)
-  const [fruits, setFruits] = useState([
+  const [fruits, setFruits] = useState<FruitType[]>([
     { id: 1, nom: "Abricot" },
     { id: 2, nom: "Banane" },
     { id: 3, nom: "Cerise" },
