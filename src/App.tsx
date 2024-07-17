@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Fruit from "./components/Fruit";
 import FruitForm from "./components/FruitForm";
+import { FruitType } from "./typescript/FruitType";
 
 function App() {
   // state (état, données)
@@ -22,7 +23,7 @@ function App() {
     setFruits(fruitsCopyUpdated);
   };
 
-  const handleAdd = (fruitAAjouter: { id: number; nom: string }) => {
+  const handleAdd = (fruitAAjouter: FruitType) => {
     //1. copie du state
     const fruitsCopy = [...fruits];
 
