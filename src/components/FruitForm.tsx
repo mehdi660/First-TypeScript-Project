@@ -1,6 +1,11 @@
 import { useState } from "react";
+import { FruitType } from "../typescript/FruitType";
 
-export default function FruitForm({ handleAdd }) {
+type FruitFormProps = {
+  handleAdd: (fruitAAjouter: FruitType) => void;
+};
+
+export default function FruitForm({ handleAdd }: FruitFormProps) {
   // state
   const [nouveauFruit, setNouveauFruit] = useState("");
 
